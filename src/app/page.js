@@ -5,6 +5,7 @@ import GOOGLE_ICON from '../assets/google-icon.svg';
 
 export default function Home() {
   return (
+
     <div className="flex flex-col md:flex-row w-full h-screen">
       {/* Left Side with Cover Image */}
       <div className="relative w-full md:w-1/2 h-1/2 md:h-full bg-red-200 hidden md:block"> {/* Hide entire div on mobile */}
