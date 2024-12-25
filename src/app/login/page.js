@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import COVER_IMAGE from '../assets/simba-login.png';
-import LOGO_IMAGE from '../assets/baznas-logo.png';
-import GOOGLE_ICON from '../assets/google-icon.svg';
+import COVER_IMAGE from '/public/simba-login.png';
+import LOGO_IMAGE from '/public/baznas-logo.png';
+import GOOGLE_ICON from '/public/google-icon.svg';
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <Image src={LOGO_IMAGE} alt="baznas logo" className="w-[107px] mb-5 pt-5" />
           </div>
-          <div className="flex flex-col mt-10 pt-36">
+          <div className="flex flex-col mt-10 pt-28">
             <h1 className="text-4xl font-black text-[#215635]">SIMBA</h1>
             <h2 className="text-2xl font-bold pt-14">Masuk</h2>
             <p className="font-normal text-gray-500 mt-2">
@@ -34,7 +34,7 @@ export default function Home() {
               Silahkan login menggunakan akun Google Anda.
             </p>
           </div>
-          <button className="mt-8 flex items-center justify-center border border-gray-400 bg-white text-gray-800 font-semibold py-3 px-6 rounded-2xl shadow hover:bg-gray-100 transition duration-200">
+          <button className="mt-8 flex items-center justify-center border border-gray-400 bg-white text-gray-500 font-semibold py-3 px-6 rounded-2xl shadow hover:bg-gray-100 transition duration-200">
             <Image src={GOOGLE_ICON} alt="Google Icon" width={20} height={20} className="mr-3" />
             Sign in with Google
           </button>
